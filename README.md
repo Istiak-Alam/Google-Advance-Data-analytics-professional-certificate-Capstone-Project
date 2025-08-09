@@ -10,9 +10,9 @@ This project predicts employee turnover using multiple logistic regression and m
 
 - Decision Tree  
 - Random Forest  
-- XGBoost (best performing)
+- XGBoost (best performing)  
 
-The dataset is from the fictional company **Salifort Motors** and is part of the **Google Advanced Data Analytics Professional Certificate Capstone Project**.
+The dataset is from the fictional company **Salifort Motors** and is part of the Google Advanced Data Analytics Professional Certificate Capstone Project.
 
 | Model Name                  | Precision | Recall | F1 Score | Accuracy | AUC   |
 |----------------------------|-----------|--------|----------|----------|-------|
@@ -31,16 +31,16 @@ Salifort Motors faces costly employee turnover due to investments in recruitment
 
 ## Data Understanding
 
-- **Source:** [Kaggle HR Analytics Dataset](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv)  
-- **License:** [Creative Commons Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/)  
+- **Source:** Kaggle HR Analytics Dataset  
+- **License:** Creative Commons Zero (CC0)  
 - **Size:** ~12,000 employee records  
 - **Features:** Employee satisfaction, last evaluation, number of projects, average monthly hours, tenure, work accidents, promotions, department, salary level, turnover status (target variable)
 
-### Employee Turnover Proportion
+---
 
-<p align="center">
-    <img src="Images/left.png" alt="Employee Turnover Proportion" width="40%" height="40%">
-</p>
+## Employee Turnover Proportion
+
+![Employee Turnover Proportion](Images/left.png)
 
 ---
 
@@ -48,9 +48,7 @@ Salifort Motors faces costly employee turnover due to investments in recruitment
 
 An XGBoost model with tuned hyperparameters and feature engineering was built to classify employees as staying or leaving. The feature importance plot below highlights the top factors influencing turnover:
 
-<p align="center">
-    <img src="Images/fi_xgb_fe.png" alt="Feature Importances - XGBoost with Feature Engineering" width="40%" height="40%">
-</p>
+![Feature Importances - XGBoost with Feature Engineering](Images/fi_xgb_fe.png)
 
 ---
 
