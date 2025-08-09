@@ -1,40 +1,58 @@
-# Predicting Employee Turnover
+Predicting Employee Turnover
+View Full Project Notebook
 
-**Click [here](https://github.com/Istiak-Alam/Google-Advance-Data-analytics-professional-certificate-Capstone-Project/blob/main/Salifort_Motors_project_lab.ipynb) to view the capstone project, which includes detailed explantion for each step.**
+Overview
+This project predicts employee turnover using multiple logistic regression and machine learning algorithms, including:
 
-Or go copy/paste URL into a browser:  
-(https://github.com/Istiak-Alam/Google-Advance-Data-analytics-professional-certificate-Capstone-Project/blob/main/Salifort_Motors_project_lab.ipynb)
+Decision Tree
 
-### Overview
+Random Forest
 
-The goal of this project was to create a predictive model for employee turnover through multiple logistic regression or through machine learning algorithms such as Decision Tree, Random Forest and eXtreme Gradient Boosting (XGBoost). This Google Advanced Data Analytics Professional Certificate capstone project utilized employee statistics from the fictional company Salifort Motors. The best model for this analysis was XGBoost with tuned hyperparameters. The metrics below are the metrics for the model's success on the test set:
+XGBoost (best performing)
 
-|Model Name|Precision|Recall|F1 Score|Accuracy|AUC
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|XGBoost (with feature engineering)| 90.1%| 87.8%| 89.0%| 96.4%| 97.0%|
+The dataset is from the fictional company Salifort Motors and is part of the Google Advanced Data Analytics Professional Certificate Capstone Project.
 
-Using an XGBoost (FE) model, we see that the main predictive features in determining if an employee will leave are: `number_project`, `tenure`, `last_evaluation`, `overworked`, `work_accident` and `salary`.
+Model Name	Precision	Recall	F1 Score	Accuracy	AUC
+XGBoost (with feature engineering)	90.1%	87.8%	89.0%	96.4%	97.0%
 
-### Business Understanding
+The key predictive features for employee turnover include:
+number_project, tenure, last_evaluation, overworked (hours > 175/month), work_accident, and salary.
 
-Salifort’s senior leadership team is concerned about how many employees are leaving the company. The high turnover rate is costly in the financial sense because Salifort makes a big investment in recruiting, training, and upskilling its employees. If Salifort could predict whether an employee will leave the company, and discover the reasons behind their departure, they could better understand the problem and develop a solution.
+Business Understanding
+Salifort Motors faces costly employee turnover due to investments in recruitment, training, and upskilling. By predicting which employees are likely to leave and understanding key drivers, leadership can develop targeted retention strategies to reduce turnover and improve workplace culture.
 
-### Data Understanding
+Data Understanding
+Source: Kaggle HR Analytics Dataset
 
-The fictional company's data came from [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv) and is free to use according to this [license](https://creativecommons.org/publicdomain/zero/1.0/). The data consisted of approximately 12k unique employees and 10 features per employee. The features included information on employee satisfaction, evaluation score, number of projects contributed to, average number of hours worked per month, tenure at the company, whether if they had a work accident, if they were promoted within the last 5 years, department worked for, and salary. The pie chart below shows the proportion of employees at Salifort Motors, with 0 meaning the employee has stayed and 1 meaning the employee has left.
+License: Creative Commons Zero (CC0)
 
-<p align="center">
-    <img src="Images/left.png" title="Employee Proportion" height="40%" width="40%">
-</p>
+Size: ~12,000 employee records
 
-### Modeling and Evaluation
+Features: Employee satisfaction, last evaluation, number of projects, average monthly hours, tenure, work accidents, promotions, department, salary level, turnover status (target variable)
 
-An XGBoost model with tuned hyperparameters and feature engineering was used to determine feature importance in who would leave or stay at Salifort Motors. The below plot shows that the number of contributing projects, tenure with company, last evaluation score, working an average of over 175 hours per month, experiencing an accident, and salary are important factors.
+Employee Turnover Proportion
+<p align="center"> <img src="Images/left.png" alt="Employee Turnover Proportion" width="40%" height="40%"> </p>
+Modeling & Evaluation
+An XGBoost model with tuned hyperparameters and feature engineering was built to classify employees as staying or leaving. The feature importance plot below highlights the top factors influencing turnover:
 
-<p align="center">
-    <img src="Images/fi_xgb_fe.png" title="Feature Importances - XGBoost with Feature Engineering" height="40%" width="40%">
-</p>
+<p align="center"> <img src="Images/fi_xgb_fe.png" alt="Feature Importances - XGBoost with Feature Engineering" width="40%" height="40%"> </p>
+Conclusion
+The XGBoost model effectively predicts employee turnover with high accuracy and recall. By focusing retention efforts on key predictive factors, Salifort Motors can reduce employee churn and foster a better work environment.
 
-### Conclusion
+Tools & Technologies
+Python (Pandas, NumPy, Scikit-learn, XGBoost)
 
-The XGBoost model that was developed can benefit Salifort Motors in knowing if an employee is leaving or not. Dedicating resources into the feature importance will limit employee turnover while promoting good work culture.
+Jupyter Notebook
+
+Matplotlib & Seaborn for visualization
+
+How to Run
+bash
+Copy
+Edit
+git clone https://github.com/Istiak-Alam/Google-Advance-Data-analytics-professional-certificate-Capstone-Project.git
+cd Google-Advance-Data-analytics-professional-certificate-Capstone-Project
+pip install -r requirements.txt
+jupyter notebook Salifort_Motors_project_lab.ipynb
+Feel free to copy this and replace your current README.md file!
+Make sure your Images folder is in the repo root and contains the image files left.png and fi_xgb_fe.png for the visuals to display correctly.
