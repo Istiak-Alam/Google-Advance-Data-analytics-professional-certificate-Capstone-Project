@@ -40,7 +40,8 @@ Salifort Motors faces costly employee turnover due to investments in recruitment
 
 ## Employee Turnover Proportion
 
-![Employee Turnover Proportion](Images/left.png)
+*Include your turnover proportion image here (upload to repo and link)*  
+`![Employee Turnover Proportion](Images/left.png)`
 
 ---
 
@@ -48,7 +49,8 @@ Salifort Motors faces costly employee turnover due to investments in recruitment
 
 An XGBoost model with tuned hyperparameters and feature engineering was built to classify employees as staying or leaving. The feature importance plot below highlights the top factors influencing turnover:
 
-![Feature Importances - XGBoost with Feature Engineering](Images/fi_xgb_fe.png)
+*Include your feature importance image here*  
+`![Feature Importances - XGBoost with Feature Engineering](Images/fi_xgb_fe.png)`
 
 ---
 
