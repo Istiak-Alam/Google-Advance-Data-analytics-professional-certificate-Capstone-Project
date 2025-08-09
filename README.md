@@ -1,5 +1,4 @@
-# Predicting Employee Turnover
-
+# Predicting Employee Turnover  
 [View Full Project Notebook](https://github.com/Istiak-Alam/Google-Advance-Data-analytics-professional-certificate-Capstone-Project/blob/main/Salifort_Motors_project_lab.ipynb)
 
 ---
@@ -14,9 +13,9 @@ This project predicts employee turnover using multiple logistic regression and m
 
 The dataset is from the fictional company **Salifort Motors** and is part of the Google Advanced Data Analytics Professional Certificate Capstone Project.
 
-| Model Name                       | Precision | Recall | F1 Score | Accuracy | AUC   |
-|---------------------------------|-----------|--------|----------|----------|-------|
-| XGBoost (with feature engineering) | 90.1%     | 87.8%  | 89.0%    | 96.4%    | 97.0% |
+| Model Name                     | Precision | Recall | F1 Score | Accuracy | AUC  |
+|-------------------------------|-----------|--------|----------|----------|------|
+| XGBoost (with feature engineering) | 90.1%     | 87.8%  | 89.0%    | 96.4%    | 97.0%|
 
 The key predictive features for employee turnover include:  
 `number_project`, `tenure`, `last_evaluation`, `overworked` (hours > 175/month), `work_accident`, and `salary`.
@@ -34,14 +33,10 @@ Salifort Motors faces costly employee turnover due to investments in recruitment
 - **Source:** Kaggle HR Analytics Dataset  
 - **License:** Creative Commons Zero (CC0)  
 - **Size:** ~12,000 employee records  
-- **Features:** Employee satisfaction, last evaluation, number of projects, average monthly hours, tenure, work accidents, promotions, department, salary level, turnover status (target variable)
+- **Features:** Employee satisfaction, last evaluation, number of projects, average monthly hours, tenure, work accidents, promotions, department, salary level, turnover status (target variable)  
 
----
-
-## Employee Turnover Proportion
-
-*Include your turnover proportion image here (upload to repo and link)*  
-`![Employee Turnover Proportion](Images/left.png)`
+### Employee Turnover Proportion  
+![Employee Turnover Proportion](Images/left.png)
 
 ---
 
@@ -49,8 +44,7 @@ Salifort Motors faces costly employee turnover due to investments in recruitment
 
 An XGBoost model with tuned hyperparameters and feature engineering was built to classify employees as staying or leaving. The feature importance plot below highlights the top factors influencing turnover:
 
-*Include your feature importance image here*  
-`![Feature Importances - XGBoost with Feature Engineering](Images/fi_xgb_fe.png)`
+![Feature Importances - XGBoost with Feature Engineering](Images/fi_xgb_fe.png)
 
 ---
 
