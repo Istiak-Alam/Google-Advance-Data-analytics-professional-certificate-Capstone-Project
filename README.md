@@ -14,8 +14,8 @@ This project predicts employee turnover using multiple logistic regression and m
 
 The dataset is from the fictional company **Salifort Motors** and is part of the Google Advanced Data Analytics Professional Certificate Capstone Project.
 
-| Model Name                  | Precision | Recall | F1 Score | Accuracy | AUC   |
-|----------------------------|-----------|--------|----------|----------|-------|
+| Model Name                       | Precision | Recall | F1 Score | Accuracy | AUC   |
+|---------------------------------|-----------|--------|----------|----------|-------|
 | XGBoost (with feature engineering) | 90.1%     | 87.8%  | 89.0%    | 96.4%    | 97.0% |
 
 The key predictive features for employee turnover include:  
